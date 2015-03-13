@@ -1,0 +1,8 @@
+# Automatically generated files
+dump.S
+
+# Output files
+*.hex
+*.qip
+output_files/
+
