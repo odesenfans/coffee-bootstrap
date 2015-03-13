@@ -9,7 +9,7 @@
 
 #include <stdint.h>
 
-CoffeeCCB_s* ccb = (CoffeeCCB_s*) CCB_BASE_ADDRESS;
+coffee_ccb_s* ccb = (coffee_ccb_s*) CCB_BASE_ADDRESS;
 
 static uint32_t system_time = 0;
 
