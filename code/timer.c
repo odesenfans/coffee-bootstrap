@@ -10,7 +10,7 @@
 
 #include <stdint.h>
 
-extern CoffeeCCB_s* ccb;
+extern coffee_ccb_s* ccb;
 
 #define TIMER0_DIVISOR_VALUE 99u
 #define TIMER0_MAX_COUNTER_VALUE    999u

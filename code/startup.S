@@ -6,7 +6,9 @@
 .global _start
 _start:
     ldra r27, kernel_stack_start    ; Load stack value
-    jmp c_entry                     ; Jump to C configuration code
+    st r27, r27, 0                  ; Debug: store the stack top address on the stack
+    jal c_entry                     ; Jump to C configuration code
+    nop
 
 infinite_loop:
     jmp infinite_loop

@@ -24,11 +24,11 @@ typedef enum
     EXT_INT5 = 9,
     EXT_INT6 = 10,
     EXT_INT7 = 11
-} InterruptId_e;
+} interrupt_id_e;
 
-void set_interrupt_service_routine(InterruptId_e id, isr_ptr_t isr_ptr);
+void set_interrupt_service_routine(interrupt_id_e id, isr_ptr_t isr_ptr);
 
-void set_interrupt_priority(InterruptId_e id, unsigned int priority);
+void set_interrupt_priority(interrupt_id_e id, unsigned int priority);
 
 #define DISABLE_INTERRUPTS()    __asm__ volatile("di")
 

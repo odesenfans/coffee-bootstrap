@@ -72,6 +72,6 @@ typedef struct
     uint32_t RETI_CR0;      /**< CR0 value after executiing the 'reti' instruction. */
     uint32_t FPU_STATUS;    /**< FPU status register. */
     const uint32_t Core_VER_ID; /**< Version number of the core. */
-} CoffeeCCB_s;
+} coffee_ccb_s;
 
 #endif /* DEF_CCB_H */

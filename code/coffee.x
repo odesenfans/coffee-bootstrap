@@ -12,7 +12,7 @@ MEMORY
   ram(wx) : org = 0, l = 64k
 }
 
-kernel_stack_start = 0x50;
+kernel_stack_start = 0x1000;
 
 SECTIONS
 {

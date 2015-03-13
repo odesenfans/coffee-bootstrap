@@ -7,9 +7,9 @@
 
 #include "ccb.h"
 
-extern CoffeeCCB_s* ccb;
+extern coffee_ccb_s* ccb;
 
-void set_interrupt_service_routine(InterruptId_e id, isr_ptr_t isr_ptr)
+void set_interrupt_service_routine(interrupt_id_e id, isr_ptr_t isr_ptr)
 {
     unsigned int index = (unsigned int) id;
     isr_ptr_t* isr_ptr_table = (isr_ptr_t*) &(ccb->COP0_INT_VEC);
@@ -17,7 +17,7 @@ void set_interrupt_service_routine(InterruptId_e id, isr_ptr_t isr_ptr)
     isr_ptr_table[index] = isr_ptr;
 }
 
-void set_interrupt_priority(InterruptId_e id, unsigned int priority)
+void set_interrupt_priority(interrupt_id_e id, unsigned int priority)
 {
     uint32_t bit_shift = 0;
 
